@@ -1,0 +1,239 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard",
+      "id": "bb1",
+      "top": 333,
+      "left": 79.6,
+      "attrs": { "color": "#eeefed" }
+    },
+    {
+      "type": "board-esp32-s3-devkitc-1",
+      "id": "esp",
+      "top": 287.82,
+      "left": 839.77,
+      "attrs": {}
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 358.34,
+      "left": 585.83,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    { "type": "wokwi-ds18b20", "id": "temp1", "top": 334.87, "left": 484.08, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": 222.3,
+      "left": 178.3,
+      "attrs": { "distance": "168" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": 238.7, "left": 364.6, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": 560, "left": 404, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 566.6, "left": 672, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 342, "left": 973.4, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 427.2,
+      "left": 969.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 282.65,
+      "left": 488.2,
+      "rotate": 180,
+      "attrs": { "value": "4700" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 238.7, "left": 86.2, "attrs": {} },
+    { "type": "wokwi-relay-module", "id": "relay2", "top": 672.2, "left": 672, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": 278.4,
+      "left": 969.6,
+      "attrs": { "text": "output \nLUX" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": 316.8,
+      "left": 1046.4,
+      "attrs": { "text": "output \nultrasonik" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": 585.6,
+      "left": 844.8,
+      "attrs": { "text": "Relay TDS\nNutrisi A dan B" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": 681.6,
+      "left": 844.8,
+      "attrs": { "text": "Relay PH UP" }
+    },
+    { "type": "wokwi-relay-module", "id": "relay4", "top": 681.8, "left": 1017.6, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text5",
+      "top": 700.8,
+      "left": 1161.6,
+      "attrs": { "text": "Relay PH DOWN\n" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": 344.3, "left": -77, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 376.8,
+      "left": 1144.2,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text6",
+      "top": 336,
+      "left": 1152,
+      "attrs": { "text": "output \nturbidity" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz2",
+      "top": 367.2,
+      "left": 1048.2,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text7",
+      "top": 201.6,
+      "left": 86.4,
+      "attrs": { "text": "Sensor TDS" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text8",
+      "top": 163.2,
+      "left": 201.6,
+      "attrs": { "text": "Sensor Ultrasonik\n(Water Level)" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text9",
+      "top": 201.6,
+      "left": 364.8,
+      "attrs": { "text": "Sensor pH" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text10",
+      "top": 249.6,
+      "left": 480,
+      "attrs": { "text": "Sensor Suhu Air" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text11",
+      "top": 288,
+      "left": -76.8,
+      "attrs": { "text": "Sensor \nTurbidity" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text12",
+      "top": 633.6,
+      "left": 451.2,
+      "attrs": { "text": "Sensor LUX" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot5", "top": 584.3, "left": 163, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text14",
+      "top": 700.8,
+      "left": 172.8,
+      "attrs": { "text": "Sensor \nFlow Water" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz3",
+      "top": 549.6,
+      "left": 1048.2,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text13",
+      "top": 499.2,
+      "left": 1056,
+      "attrs": { "text": "output \nflow water" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bb1:bn.50", "esp:GND.1", "black", [ "v-1.3", "h133.65" ] ],
+    [ "bb1:bp.50", "esp:5V", "red", [ "v-0.9", "h133.65" ] ],
+    [ "bb1:bp.49", "oled1:VCC", "red", [ "v-10.5", "h66.4", "v-201.6", "h-96.15" ] ],
+    [ "esp:4", "oled1:SDA", "gold", [ "h0" ] ],
+    [ "esp:5", "oled1:SCL", "violet", [ "h0" ] ],
+    [ "oled1:GND", "bb1:bn.49", "black", [ "v-9.6", "h-48", "v174.1" ] ],
+    [ "temp1:VCC", "oled1:VCC", "red", [ "v9.6", "h67.2", "v-48", "h67.05" ] ],
+    [ "temp1:GND", "bb1:bn.40", "black", [ "v0" ] ],
+    [ "esp:6", "bb1:42t.c", "green", [ "h-67.25", "v86.4", "h-249.6" ] ],
+    [ "relay1:VCC", "bb1:bp.48", "red", [ "h0" ] ],
+    [ "relay1:GND", "bb1:bn.47", "black", [ "h0" ] ],
+    [ "relay1:IN", "esp:7", "gray", [ "h-28.8", "v28.6", "h144", "v-259.2" ] ],
+    [ "pot2:VCC", "temp1:VCC", "red", [ "v86.4", "h85.6" ] ],
+    [ "pot2:GND", "bb1:41t.c", "black", [ "v0" ] ],
+    [ "pot2:SIG", "esp:15", "green", [ "v153.6", "h345.2", "v-76.8" ] ],
+    [ "oled1:GND", "bb1:tn.45", "black", [ "v0" ] ],
+    [ "bb1:bn.39", "bb1:tn.39", "black", [ "v0" ] ],
+    [ "ultrasonic1:GND", "pot2:GND", "black", [ "h114" ] ],
+    [ "ultrasonic1:VCC", "pot2:VCC", "red", [ "v9.6", "h164" ] ],
+    [ "ultrasonic1:ECHO", "esp:16", "blue", [ "v153.6", "h488.8", "v-76.8" ] ],
+    [ "ultrasonic1:TRIG", "esp:17", "green", [ "v163.2", "h508.4", "v-76.8" ] ],
+    [ "led1:A", "r1:1", "black", [ "v0" ] ],
+    [ "ldr1:VCC", "bb1:bp.46", "red", [ "h0" ] ],
+    [ "ldr1:GND", "bb1:bn.45", "black", [ "h0" ] ],
+    [ "ldr1:AO", "esp:8", "green", [ "h28.8", "v47.3", "h192", "v-230.4" ] ],
+    [ "ldr1:DO", "esp:18", "green", [ "h48", "v47.4", "h153.6", "v-230.4" ] ],
+    [ "r3:2", "bb1:42t.e", "green", [ "v28.8", "h20.4", "v96", "h-19.2" ] ],
+    [ "r3:1", "bb1:43t.e", "red", [ "v28.8", "h-28.8", "v105.6" ] ],
+    [ "pot1:VCC", "ultrasonic1:VCC", "red", [ "v19.2", "h114.4" ] ],
+    [ "pot1:GND", "bb1:bn.5", "black", [ "h-67.2", "v222.1" ] ],
+    [ "pot1:SIG", "esp:3", "green", [ "v182.4", "h681.2", "v-57.6" ] ],
+    [ "relay2:VCC", "bb1:bp.21", "red", [ "h0" ] ],
+    [ "relay2:GND", "bb1:bn.20", "black", [ "h0" ] ],
+    [ "relay4:VCC", "bb1:bp.17", "red", [ "h-38.4", "v67.2", "h-671.2" ] ],
+    [ "relay4:GND", "bb1:bn.16", "black", [ "h-28.8", "v86", "h-690.4" ] ],
+    [ "relay4:IN", "esp:9", "gray", [ "h-192", "v-269" ] ],
+    [ "pot3:VCC", "pot1:VCC", "red", [ "v19.2", "h56.8", "v-105.6", "h106.4" ] ],
+    [ "pot3:GND", "bb1:bn.1", "black", [ "v0" ] ],
+    [ "pot3:SIG", "esp:10", "green", [ "v86.4", "h854", "v-38.4" ] ],
+    [ "bz1:2", "esp:20", "green", [ "v0" ] ],
+    [ "esp:11", "relay2:IN", "gray", [ "h-9.65", "v288", "h-163.2" ] ],
+    [ "bz2:2", "esp:21", "green", [ "v0" ] ],
+    [ "bz1:1", "bz2:1", "black", [ "h-96" ] ],
+    [ "temp1:GND", "bb1:41t.a", "", [ "$bb" ] ],
+    [ "temp1:DQ", "bb1:42t.a", "", [ "$bb" ] ],
+    [ "temp1:VCC", "bb1:43t.a", "", [ "$bb" ] ],
+    [ "pot5:GND", "bb1:bn.6", "black", [ "v28.8", "h-57.6", "v-152.3" ] ],
+    [ "pot5:VCC", "pot3:VCC", "red", [ "v48", "h-240.8", "v-288" ] ],
+    [ "esp:12", "pot5:SIG", "green", [ "v67.2", "h-576.05", "v134.4", "h-66.8" ] ],
+    [ "bz3:1", "bz1:1", "black", [ "v19.2", "h96" ] ],
+    [ "bz3:2", "esp:19", "green", [ "v9.6", "h-58", "v-115.2" ] ],
+    [ "r1:2", "esp:GND.2", "black", [ "h-38.4", "v-106.8" ] ],
+    [ "bz2:1", "led1:A", "black", [ "h-48", "v-67.2" ] ],
+    [ "led1:C", "esp:36", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
